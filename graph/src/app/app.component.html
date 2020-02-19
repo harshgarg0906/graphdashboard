@@ -1,0 +1,23 @@
+
+
+
+<div id="wrapper"  class="container">
+  <div id="mySidenav" #mySidenav class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#"  routerLink="/dashboard"><img src="assets/home1.png">HOME</a>
+    <a href="#" routerLink="/transaction">APM</a>
+    <a href="#" routerLink="/infra">INFRASTRUCTURE</a>
+    <a href="#" routerLink="/alerts">ALERTS</a>
+    <a href="#" routerLink="/dashboard">DASHBOARDS & METRICS</a>
+    <a href="#" routerLink="/support">SUPPORT</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span (click)="openNav()">
+  <img src="assets/hamburger.png">
+ 
+  </span>
+  
+  <router-outlet></router-outlet>
+
+  </div>
